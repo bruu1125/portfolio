@@ -1,0 +1,133 @@
+
+
+.index {
+    width:100%;
+    height:100vh;
+    background: url(../image/port-main.jpg) 10% no-repeat fixed;
+    background-size: cover;
+    color:#F6F6F6;
+    position:relative;
+}
+.index::before {
+    content: '';
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.6);
+}
+.p-index-text {
+    
+    font-family: "montserrat_t";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 5vw;;
+}
+.p-index-sub {
+    font-family: "pretendard_l";
+    position:absolute;
+    top:58%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5vw;;
+}
+.port-main {
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top:10vh;
+    padding-bottom: 20vh;;
+    align-items: center;
+}
+
+.port-main>h2 {
+    font-size:3vh;
+    margin-bottom:3%;
+}
+
+.port-con {
+    width:60%;
+    height:35vh;
+    /* border:1px solid red; */
+    margin:0 0 5% 0;
+    padding:1%;
+    align-content: center;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+    font-family: "pretendard_m";
+}
+.port-con:last-child {
+    margin-bottom:0;
+}
+.p-thumb {
+    width:55%;
+    /* border:1px solid red; */
+}
+.p-thumb>img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+}
+.p-sub {
+    width:40%;
+    /* border:1px solid red; */
+    align-content: center;
+}
+.p-sub>h3 {
+    font-family: "pretendard_b";
+    font-size:3.5vh;
+    padding:1%;
+    /* border:1px solid red; */
+}
+.p-sub>p {
+    font-size:2.5vh;
+    /* border:1px solid red; */
+    padding:1%;
+}
+.p-sub>button {
+    padding: 10px 20px;
+    font-size:2.2vh;
+    margin-top:10%;
+    cursor: pointer;
+    background:rgba(0,0,0,0.3);
+    outline: none;
+    border:none;
+    font-family: "pretendard_m";
+    transition: 0.5s;
+}
+.p-sub>button:hover {
+    background: rgba(0,0,0,0.8);
+    color:#F6F6F6;
+    padding: 10px 30px;
+}
+.p-sub:nth-child(odd) {
+    text-align: right;
+}
+
+.port-etc {
+    width:80%;
+    display:flex;
+    padding:1%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border:1px solid red; */
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+.p-etc-thumb {
+    width:150px;
+    height:150px;
+    /* border:1px solid red; */
+}
+.p-etc-thumb>img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+}
